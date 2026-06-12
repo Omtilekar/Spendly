@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    .terms-section {
+        padding: 5rem 2rem 6rem;
+    }
+
+    .terms-inner {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+
+    .terms-eyebrow {
+        display: inline-block;
+        background: var(--accent-light);
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 0.35rem 0.85rem;
+        border-radius: 999px;
+        margin-bottom: 1.5rem;
+    }
+
+    .terms-title {
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 3rem);
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        color: var(--ink);
+        margin-bottom: 0.75rem;
+    }
+
+    .terms-meta {
+        font-size: 0.85rem;
+        color: var(--ink-faint);
+        margin-bottom: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .terms-inner h2 {
+        font-family: var(--font-display);
+        font-size: 1.35rem;
+        color: var(--ink);
+        margin-top: 2.5rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .terms-inner p {
+        font-size: 0.975rem;
+        color: var(--ink-muted);
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+    .terms-inner ul {
+        margin: 0.5rem 0 1rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+
+    .terms-inner ul li {
+        font-size: 0.975rem;
+        color: var(--ink-muted);
+        line-height: 1.7;
+    }
+
+    .terms-inner a {
+        color: var(--accent);
+        font-weight: 500;
+    }
+
+    .terms-inner a:hover {
+        text-decoration: underline;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section class="terms-section">
+    <div class="terms-inner">
+
+        <span class="terms-eyebrow">Legal</span>
+        <h1 class="terms-title">Terms and Conditions</h1>
+        <p class="terms-meta">Last updated: June 12, 2026</p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+            By accessing or using Spendly ("the Service"), you agree to be bound by these Terms and Conditions.
+            If you do not agree with any part of these terms, you may not use the Service.
+        </p>
+
+        <h2>2. Use of Service</h2>
+        <p>
+            Spendly is a personal expense tracking tool intended for individual, non-commercial use.
+            You agree to use the Service only for lawful purposes and in a way that does not infringe
+            the rights of others or restrict their use of the Service.
+        </p>
+        <p>You must not:</p>
+        <ul>
+            <li>Use the Service to store false, misleading, or fraudulent financial data.</li>
+            <li>Attempt to gain unauthorised access to any part of the Service or its infrastructure.</li>
+            <li>Reverse-engineer, copy, or redistribute any part of the Service.</li>
+        </ul>
+
+        <h2>3. User Data</h2>
+        <p>
+            You retain ownership of all expense data you enter into Spendly. We do not sell or share
+            your personal financial data with third parties. Data is stored securely and used solely
+            to provide the Service to you. By using the Service, you consent to this data handling
+            as described in our <a href="#">Privacy Policy</a>.
+        </p>
+
+        <h2>4. Limitation of Liability</h2>
+        <p>
+            Spendly is provided "as is" without warranties of any kind. We are not liable for any
+            inaccuracies in expense calculations, data loss, or financial decisions made based on
+            information displayed in the app. Use the Service as a personal aid only — it is not
+            a substitute for professional financial advice.
+        </p>
+
+        <h2>5. Changes to Terms</h2>
+        <p>
+            We may update these Terms and Conditions from time to time. Continued use of the Service
+            after changes are posted constitutes your acceptance of the revised terms. We will make
+            reasonable efforts to notify users of significant changes.
+        </p>
+
+        <h2>6. Contact</h2>
+        <p>
+            If you have any questions about these terms, please reach out via the contact information
+            provided on our website.
+        </p>
+
+    </div>
+</section>
+
+{% endblock %}
